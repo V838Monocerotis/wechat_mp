@@ -26,15 +26,24 @@ public class PageUtil<T> {
 	/**结果集*/
 	private List<T> list;
 	
+	/**
+	 * @param currPage 当前页
+	 * @param totalRecords 总记录数
+	 */
 	public PageUtil(int currPage, long totalRecords) {
 		this.currPage = currPage;
 		this.totalRecords = totalRecords;
 		init();
 	}
-	
-	public PageUtil(int pageSize, int currPage, long totalRecords) {
-		this.pageSize = pageSize;
+
+	/**
+	 * @param currPage 当前页
+	 * @param pageSize 每页记录数
+	 * @param totalRecords 总记录数
+	 */
+	public PageUtil(int currPage, int pageSize, long totalRecords) {
 		this.currPage = currPage;
+		this.pageSize = pageSize;
 		this.totalRecords = totalRecords;
 		init();
 	}
