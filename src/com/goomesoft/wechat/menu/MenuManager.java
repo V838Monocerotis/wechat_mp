@@ -12,7 +12,7 @@ import com.goomesoft.common.utils.HttpUtil;
 import com.goomesoft.common.utils.JsonUtil;
 import com.goomesoft.wechat.config.WechatConfig;
 import com.goomesoft.wechat.model.AccessToken;
-import com.goomesoft.wechat.utils.WeChatUtil;
+import com.goomesoft.wechat.utils.WechatUtil;
 
 public class MenuManager {
 	
@@ -28,7 +28,7 @@ public class MenuManager {
         String appSecret = WechatConfig.APPSECRET; 
   
         // 调用接口获取access_token  
-        AccessToken at = WeChatUtil.getAccessToken(appId, appSecret);  
+        AccessToken at = WechatUtil.getAccessToken(appId, appSecret);  
         if (null != at) {  
             // 调用接口创建菜单  
             int result = createMenu(getMenu(), at.getToken());  
