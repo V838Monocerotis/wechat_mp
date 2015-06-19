@@ -1,5 +1,10 @@
 package com.goomesoft.wechat.custom;
 
+/**
+ * 图文消息
+ * @author eternal
+ *
+ */
 public class NewsMessage {
 	
 	private String touser;
