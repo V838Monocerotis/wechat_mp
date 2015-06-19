@@ -17,6 +17,14 @@ public class WxPayHelper {
 	
 	private static Logger log = LogManager.getLogger(WxPayHelper.class);
 
+	/**
+	 * @param outTradeNo 订单号
+	 * @param remoteAddr 客户端地址
+	 * @param openid  用户openid
+	 * @param totalFee 订单总金额
+	 * @param body 订单内容
+	 * @return
+	 */
 	public static String getJsPkg(String outTradeNo, String remoteAddr, String openid, String totalFee, String body) {
 		HashMap<String, String> params = new HashMap<String, String> ();
 		params.put("appid", WechatConfig.APPID);
